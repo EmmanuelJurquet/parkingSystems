@@ -1,12 +1,13 @@
-/* Setting up PROD DB */
+
 create database prod;
 use prod;
-
+ 
 create table parking(
 PARKING_NUMBER int PRIMARY KEY,
 AVAILABLE bool NOT NULL,
 TYPE varchar(10) NOT NULL
 );
+
 
 create table ticket(
  ID int PRIMARY KEY AUTO_INCREMENT,
@@ -25,7 +26,6 @@ insert into parking(PARKING_NUMBER,AVAILABLE,TYPE) values(4,true,'BIKE');
 insert into parking(PARKING_NUMBER,AVAILABLE,TYPE) values(5,true,'BIKE');
 commit;
 
-/* Setting up TEST DB */
 create database test;
 use test;
 
